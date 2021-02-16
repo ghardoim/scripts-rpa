@@ -1,4 +1,4 @@
 Private Sub Workbook_Open()
   Application.Visible = False
-  Call converter_PPT_JPG
+  Call preencher_ponto
 End Sub
