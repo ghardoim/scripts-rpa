@@ -24,5 +24,17 @@ Sub preencher_ponto()
     End If
   Next
   
-  planilha_ponto.Close (True)
+  planilha_ponto.Close (True)  
+  Call MsgBox("Ponto preenchido!", , "")
+  
+  Call otimiza
+  Application.Quit
+
+End Sub
+
+Sub otimiza()
+
+  Application.ScreenUpdating = Not Application.ScreenUpdating
+  Application.Visible = Not Application.Visible
+
 End Sub
