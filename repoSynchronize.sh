@@ -5,7 +5,7 @@ while getopts ":u:h" flags; do
   case $flags in
     u)
       git init && git remote add origin $OPTARG
-      git pull origin main && git push origin main -u
+      git pull origin master && git push origin master -u
       git remote get-url origin
       exit ;;
     \? | h)
